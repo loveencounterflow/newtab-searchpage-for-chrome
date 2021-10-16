@@ -1,0 +1,2198 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+  <meta name='theme-color' content='#333333'>
+  <script src='mysearchpage.js'></script>
+
+  <!-- <link rel='stylesheet' href='App-variables-defaults.css'> -->
+
+  <base href="/">
+</head>
+
+<!-- https://github.com/balazsbotond/urlcat -->
+
+
+
+<style>
+	img {
+		width:		30mm;
+	}
+
+</style>
+
+<body>
+
+<form action="https://dict.tu-chemnitz.de/dings.cgi?service=deen&opterrors=0&optpro=0&&iservice=" method=get>
+<input type=text name=query tabindex=1 autofocus>
+<button type=submit>BeoLingus</button>
+</form>
+
+<form action="http://npm.broofa.com" method=get>
+<input type=text name=q tabindex=2 autofocus>
+<button type=submit>NPM dependencies (broofa)</button>
+</form>
+
+<form action="http://npm.anvaka.com/#/view/2d/cupofjoe" method=get>
+<input type=text name=q tabindex=3 autofocus>
+<button type=submit>NPM dependencies (anvaka)</button>
+</form>
+
+<form action="https://www.ahdictionary.com/word/search.html" method=get>
+<input type=text name=q tabindex=4 autofocus>
+<button type=submit>American Heritage Dictionary</button>
+</form>
+
+<form action="https://www.zdic.net/hans/俑" method=get>
+<input type=text name=q tabindex=5 autofocus>
+<button type=submit>zdic</button>
+</form>
+
+<form action="https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/search.php" method=get>
+<input type=text name=word tabindex=6 autofocus>
+<button type=submit>漢語多功能字庫</button>
+</form>
+
+<form action="https://www.urbandictionary.com/define.php" method=get>
+<input type=text name=term tabindex=7 autofocus>
+<button type=submit>Urban Dictionary</button>
+</form>
+
+<form action="https://duckduckgo.com/?q=%E8%AE%80%E8%8B%A5+site%3Awikipedia.org" method=get>
+<input type=text name=term tabindex=8 autofocus>
+<button type=submit>Wikipedia</button>
+</form>
+
+<form action="https://wcd-ihp.ascdc.sinica.edu.tw/union/en/index.php?c=search" method=get>
+<input type=text name=moji tabindex=9 autofocus>
+<button type=submit>史的文字データベース連携検索システム</button>
+</form>
+
+<form action="https://www.mdbg.net/chinese/dictionary?page=worddict&wdrst=1" method=get>
+<input type=text name=wdqb tabindex=10 autofocus>
+<button type=submit>MDBG</button>
+</form>
+
+<form action="https://www.wadoku.de/search/平行世界" method=get>
+<input type=text name=q tabindex=11 autofocus>
+<button type=submit>wadoku.de</button>
+</form>
+
+<form action="https://www.etymonline.com/search" method=get>
+<input type=text name=q tabindex=12 autofocus>
+<button type=submit>etymonline.com</button>
+</form>
+
+<form action="https://lib.rs/search" method=get>
+<input type=text name=q tabindex=13 autofocus>
+<button type=submit>lib.rs</button>
+</form>
+
+<form action="https://de.wiktionary.org/w/index.php" method=get>
+<input type=hidden name=prefix value=Reim:Deutsch:>
+<input type=hidden name=title value=Spezial:Suche>
+<input type=hidden name=profile value=advanced>
+<input type=hidden name=fulltext value=1>
+<input type=hidden name=ns0 value=1>
+<input type=text name=search tabindex=13 autofocus>
+<button type=submit>Wiktionary Reime</button>
+</form>
+
+<form action="https://www.powerthesaurus.org/%q/%cat" method=get>
+<input type=text name=q tabindex=14 autofocus>
+<label for=pth_synonyms>synonyms</label><input type=radio id=pth_synonyms name=cat value=synonyms checked>
+<label for=pth_antonyms>antonyms</label><input type=radio id=pth_antonyms name=cat value=antonyms>
+<label for=pth_definitions>definitions</label><input type=radio id=pth_definitions name=cat value=definitions>
+<label for=pth_examples>examples</label><input type=radio id=pth_examples name=cat value=examples>
+<label for=pth_related>related</label><input type=radio id=pth_related name=cat value=related>
+<label for=pth_narrower>narrower</label><input type=radio id=pth_narrower name=cat value=narrower>
+<label for=pth_broader>broader</label><input type=radio id=pth_broader name=cat value=broader>
+<label for=pth_similar>similar</label><input type=radio id=pth_similar name=cat value=similar>
+<label for=pth_sound_like>sound_like</label><input type=radio id=pth_sound_like name=cat value=sound_like>
+<label for=pth_rhymes>rhymes</label><input type=radio id=pth_rhymes name=cat value=rhymes>
+<button type=submit>powerthesaurus.org</button>
+</form>
+
+<form action="https://www.thesaurus.com/browse/indentation#" method=get>
+<input type=text name=q tabindex=15 autofocus>
+<button type=submit>thesaurus.com</button>
+</form>
+
+<form action="https://npms.io/search" method=get>
+<input type=text name=q tabindex=16 autofocus>
+<button type=submit>NPM Search</button>
+</form>
+
+<form action="https://www.google.com/search?tbm=bks" method=get>
+<input type=text name=q tabindex=17 autofocus>
+<button type=submit>Google Books</button>
+</form>
+
+<form action="https://de.pons.com/übersetzung/deutsch-chinesisch/steingarten?bidir=1" method=post>
+<input type=text name=xxx tabindex=18 autofocus>
+<button type=submit>Pons Deutsch–Chinesisch [XXX]</button>
+</form>
+
+<form action="https://de.thefreedictionary.com/eisenbahn" method=post>
+<input type=text name=xxx tabindex=19 autofocus>
+<button type=submit>TFD [XXX]</button>
+</form>
+
+<form action="http://www.handedict.de/dd/chinesisch_deutsch.php" method=post>
+<input type=text name=search_keywords tabindex=20 autofocus>
+<button type=submit>HanDeDict (???)</button>
+</form>
+
+<form action="https://www.academia.edu/search" method=get>
+<input type=text name=q tabindex=21 autofocus>
+<input type=hidden name=utf8 value=✓>
+<button type=submit>academia.edu</button>
+</form>
+
+
+          <blockquote>
+            <h1>Unicode 13.0 Web Bookmarks</h1>
+             <h2>About this page</h2>
+             <p>This page contains hyperlinks to <i>The Unicode Standard, Version 13.0</i>. The
+             <a href="http://www.unicode.org/versions/Unicode13.0.0/">Unicode 13.0.0</a> page lists the contents with links to each PDF file.</p>
+<ul><li><a href="http://www.unicode.org/versions/Unicode13.0.0/Preface.pdf#G4215">Preface</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/Preface.pdf#G12253">Why Unicode?</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/Preface.pdf#G12297">What’s New?</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/Preface.pdf#G10191">Organization of This Standard</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/Preface.pdf#G12808">The Unicode Character Database</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/Preface.pdf#G10883">Unicode Code Charts</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/Preface.pdf#G10754">Unicode Standard Annexes</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/Preface.pdf#G10908">Unicode Technical Standards and Unicode Technical Reports</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/Preface.pdf#G10939">Updates and Errata</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/Preface.pdf#G10146">Acknowledgements</a></li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch01.pdf#G7252">1 Introduction</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch01.pdf#G6853">Figure 1-1. Wide ASCII</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch01.pdf#G6600">1.1 Coverage</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch01.pdf#G6509">Standards Coverage</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch01.pdf#G6512">New Characters</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch01.pdf#G7110">1.2 Design Goals</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch01.pdf#G9704">Figure 1-2. Unicode Compared to the 2022 Framework</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch01.pdf#G9708">1.3 Text Handling</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch01.pdf#G10193">Characters and Glyphs</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch01.pdf#G6533">Text Elements</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G78">2 General Structure</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G12888">2.1 Architectural Context</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G1553">Basic Text Processes</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G83">Text Elements, Characters, and Text Processes</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G286353">Figure 2-1. Text Elements and Characters</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G22430">Text Processes and Encoding</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G128">2.2 Unicode Design Principles</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G23892">Table 2-1. The 10 Unicode Design Principles</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G21832">Universality</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G18827">Efficiency</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G8085">Characters, Not Glyphs</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G4254">Figure 2-2. Characters Versus Glyphs</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G21893">Table 2-2. User-Perceived Characters with Multiple Code Points</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G4315">Figure 2-3. Unicode Character Code to Rendered Glyphs</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G17826">Semantics</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G642">Plain Text</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G286698">Logical Order</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G286522">Figure 2-4. Bidirectional Ordering</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G25372">Figure 2-5. Writing Direction and Numbers</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G8957">Unification</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G24876">Figure 2-6. Typeface Variation for the Bone Character</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G21397">Dynamic Composition</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G21962">Figure 2-7. Dynamic Composition</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G23256">Stability</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G285744">Convertibility</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G11062">2.3 Compatibility Characters</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G284519">Compatibility Variants</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G285012">Compatibility Decomposable Characters</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G25564">2.4 Code Points and Characters</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G14493">Figure 2-8. Abstract and Encoded Characters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G14527">Types of Code Points</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G286941">Table 2-3. Types of Code Points</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G13708">2.5 Encoding Forms</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G15934">Figure 2-9. Overlap in Legacy Mixed-Width Encodings</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G15950">Figure 2-10. Boundaries and Interpretation</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G12143">Figure 2-11. Unicode Encoding Forms</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G18421">UTF-32</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G11153">UTF-16</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G11165">UTF-8</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G19273">2.6 Encoding Schemes</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G18461">Table 2-4. The Seven Unicode Encoding Schemes</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G18520">Figure 2-12. Unicode Encoding Schemes</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G18444">2.7 Unicode Strings</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G16417">2.8 Unicode Allocation</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G16433">Planes</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G16450">Allocation Areas and Blocks</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G23396">Assignment of Code Points</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G16482">2.9 Details of Allocation</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G286741">Figure 2-13. Unicode Allocation</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G286747">Plane 0 (BMP)</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G286027">Figure 2-14. Allocation on the BMP</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G289407">Plane 1 (SMP)</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G27627">Figure 2-15. Allocation on Plane 1</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G23473">Plane 2 (SIP)</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G23477">Other Planes</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G6318">2.10 Writing Direction</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G24418">Figure 2-16. Writing Directions</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G1708">2.11 Combining Characters</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G25314">Figure 2-17. Combining Enclosing Marks for Symbols</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G1821">Sequence of Base Characters and Diacritics</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G24056">Figure 2-18. Sequence of Base Characters and Diacritics</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G285834">Figure 2-19. Reordered Indic Vowel Signs</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G25637">Figure 2-20. Properties and Combining Character Sequences</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G1721">Multiple Combining Characters</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G26239">Figure 2-21. Stacking Sequences</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G289088">Table 2-5. Interaction of Combining Characters</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G290429">Table 2-6. Nondefault Stacking</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G23381">Ligated Multiple Base Characters</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G4439">Figure 2-22. Ligated Multiple Base Characters</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G1811">Exhibiting Nonspacing Marks in Isolation</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G21807">“Characters” and Grapheme Clusters</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G287424">2.12 Equivalent Sequences</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G287432">Figure 2-23. Equivalent Sequences</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G26623">Normalization</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G26768">Figure 2-24. Canonical Ordering</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G23762">Decompositions</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G290092">Figure 2-25. Types of Decomposables</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G27986">Non-decomposition of Certain Diacritics</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G27981">2.13 Special Characters</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G21508">Special Noncharacter Code Points</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G9354">Byte Order Mark (BOM)</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G14867">Layout and Format Control Characters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G5515">The Replacement Character</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G18811">Control Codes</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G13854">2.14 Conforming to the Unicode Standard</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G26419">Characteristics of Conformant Implementations</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G26423">Unacceptable Behavior</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G1739">Acceptable Behavior</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch02.pdf#G1750">Supported Subsets</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G769">3 Conformance</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G2131">3.1 Versions of the Unicode Standard</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G31190">Stability</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G49512">Version Numbering</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G34305">Errata and Corrigenda</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G34307">References to the Unicode Standard</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G44703">Precision in Version Citation</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G34841">References to Unicode Character Properties</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G35113">References to Unicode Algorithms</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G29705">3.2 Conformance Requirements</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G22582">Code Points Unassigned to Abstract Characters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G22672">Interpretation</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G2155">Modification</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G54355">Character Encoding Forms</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G23683">Character Encoding Schemes</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G23685">Bidirectional Text</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G19042">Normalization Forms</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G29484">Normative References</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G29809">Unicode Algorithms</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G34944">Default Casing Algorithms</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G22200">Unicode Standard Annexes</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G19002">3.3 Semantics</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G22292">Definitions</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G34920">Character Identity and Semantics</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G2212">3.4 Characters and Encoding</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G56178">Table 3-1. Named Unicode Algorithms</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G43463">3.5 Properties</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G41449">Types of Properties</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G42490">Property Values</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G59119">Default Property Values</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G42499">Classification of Properties by Their Values</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G48960">Property Status</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G62201">Table 3-2. Normative Character Properties</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G49195">Table 3-3. Informative Character Properties</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G41529">Context Dependence</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G41533">Stability of Properties</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G30170">Simple and Derived Properties</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G30180">Property Aliases</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G41799">Private Use</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G30602">3.6 Combination</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G52439">Combining Character Sequences</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G52443">Grapheme Clusters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G50030">Application of Combining Marks</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G50114">Figure 3-1. Enclosing Marks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G729">3.7 Decomposition</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G748">Compatibility Decomposition</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G733">Canonical Decomposition</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G2630">3.8 Surrogates</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G7404">3.9 Unicode Encoding Forms</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G27142">Table 3-4. Examples of Unicode Encoding Forms</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G28875">UTF-32</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G31699">UTF-16</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G27792">Table 3-5. UTF-16 Bit Distribution</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G31703">UTF-8</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G27288">Table 3-6. UTF-8 Bit Distribution</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G27506">Table 3-7. Well-Formed UTF-8 Byte Sequences</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G31737">Encoding Form Conversion</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G48534">Constraints on Conversion Processes</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G66453">U+FFFD Substitution of Maximal Subparts</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G67519">Table 3-8. U+FFFD for Non-Shortest Form Sequences</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G67519">Table 3-9. U+FFFD for Ill-Formed Sequences for Surrogates</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G68064">Table 3-10. U+FFFD for Other Ill-Formed Sequences</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G68202">Table 3-11. U+FFFD for Truncated Sequences</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G28070">3.10 Unicode Encoding Schemes</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G31866">Table 3-12. Summary of UTF-16BE, UTF-16LE, and UTF-16</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G36145">Table 3-13. Summary of UTF-32BE, UTF-32LE, and UTF-32</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G49537">3.11 Normalization Forms</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G51526">Normalization Stability</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G50313">Combining Classes</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G49576">Specification of Unicode Normalization Forms</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G49579">Starters</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G61760">Table 3-14. Combining Marks and Starter Status</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G49591">Canonical Ordering Algorithm</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G50827">Table 3-15. Reorderable Pairs</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G50628">Canonical Composition Algorithm</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G49621">Definition of Normalization Forms</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G24646">3.12 Conjoining Jamo Behavior</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G45593">Definitions</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G56669">Hangul Syllable Decomposition</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G60400">Table 3-16. Hangul Characters Used in Examples</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G59688">Hangul Syllable Composition</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G59675">Hangul Syllable Name Generation</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G61399">Sample Code for Hangul Algorithms</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G33992">3.13 Default Case Algorithms</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G34000">Definitions</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G54277">Table 3-17. Context Specification for Casing</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G34078">Default Case Conversion</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G53253">Default Case Folding</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G47728">Default Case Detection</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G56044">Table 3-18. Case Detection Examples</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch03.pdf#G34145">Default Caseless Matching</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G138691">4 Character Properties</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G124718">4.1 Unicode Character Database</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G124722">4.2 Case</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G136255">Definitions of Case and Casing</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G137279">Table 4-1. Relationship of Casing Definitions</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G136923">Table 4-2. Case Function Values for Strings</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G125102">Case Mapping</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G125107">Table 4-3. Sources for Case Mapping Information</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G32493">4.3 Combining Classes</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G133077">Figure 4-1. Positions of Common Combining Marks</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G130058">Reordrant, Split, and Subjoined Combining Marks</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G130746">4.4 Directionality</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G124142">4.5 General Category</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G134153">Table 4-4. General Category</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G124206">4.6 Numeric Value</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G123168">Ideographic Numeric Values</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G138783">Table 4-5. Primary Numeric Ideographs</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G132701">Table 4-6. Ideographs Used as Accounting Numbers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G30078">4.7 Bidi Mirrored</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G2082">4.8 Name</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G141448">Table 4-7. Types of Character Name Aliases</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G135207">Unicode Name Property</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G144161">Table 4-8. Name Derivation Rule Prefix Strings</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G135248">Code Point Labels</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G135875">Table 4-9. Construction of Code Point Labels</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G135277">Use of Character Names in APIs and User Interfaces</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G131216">4.9 Unicode 1.0 Names</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G91002">4.10 Letters, Alphabetic, and Ideographic</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G124804">4.11 Properties for Text Boundaries</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G124820">4.12 Characters with Unusual Properties</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch04.pdf#G148813">Table 4-10. Unusual Properties</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G34785">5 Implementation Guidelines</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G11079">5.1 Data Structures for Character Conversion</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G34100">Issues</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G7642">Multistage Tables</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G7656">Figure 5-1. Two-Stage Tables</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G23927">5.2 Programming Languages and Data Types</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G34173">Unicode Data Types for C</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G7730">5.3 Unknown and Missing Characters</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G11318">5.4 Handling Surrogate Pairs in UTF-16</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G34360">5.5 Handling Numbers</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G7889">5.6 Normalization</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G18664">Figure 5-2. Normalization</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G518">5.7 Compression</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G10213">5.8 Newline Guidelines</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G21019">Definitions</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G41643">Table 5-1. Hex Values for Acronyms</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G32816">Table 5-2. NLF Platform Correlations</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G21129">Line Separator and Paragraph Separator</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G29990">Recommendations</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G12107">5.9 Regular Expressions</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G11552">5.10 Language Information in Plain Text</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G11021">Requirements for Language Tagging</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G11604">Language Tags and Han Unification</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G3067">5.11 Editing and Selection</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G31236">Consistent Text Elements</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G36406">Figure 5-3. Consistent Character Boundaries</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G1050">5.12 Strategies for Handling Nonspacing Marks</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G1076">Keyboard Input</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G5100">Figure 5-4. Dead Keys Versus Handwriting Sequence</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G3447">Truncation</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G6709">Figure 5-5. Truncating Grapheme Clusters</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G1095">5.13 Rendering Nonspacing Marks</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G33429">Figure 5-6. Inside-Out Rule</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G18858">Figure 5-7. Fallback Rendering</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G6762">Figure 5-8. Bidirectional Placement</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G6788">Figure 5-9. Justification</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G24068">Canonical Equivalence</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G28711">Table 5-3. Typing Order Differing from Canonical Order</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G36537">Table 5-4. Permuting Combining Class Weights</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G1113">Positioning Methods</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G41825">Figure 5-10. Positioning with Ligatures</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G6830">Figure 5-11. Positioning with Contextual Forms</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G38673">Figure 5-12. Positioning with Enhanced Kerning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G780">5.14 Locating Text Element Boundaries</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G3248">5.15 Identifiers</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G664">5.16 Sorting and Searching</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G666">Culturally Expected Sorting and Searching</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G24614">Language-Insensitive Sorting</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G24611">Searching</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G1282">Sublinear Searching</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G6993">Figure 5-13. Sublinear Searching</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G21249">5.17 Binary Order</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G21192">UTF-8 in UTF-16 Order</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G21458">UTF-16 in UTF-8 Order</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G21180">5.18 Case Mappings</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G29672">Titlecasing</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G29675">Complications for Case Mapping</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G39776">Figure 5-14. Uppercase Mapping for Turkish I</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G39836">Figure 5-15. Lowercase Mapping for Turkish I</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G37711">Figure 5-16. Casing of German Sharp S</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G37781">Reversibility</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G21790">Caseless Matching</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G26662">Normalization and Casing</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G25905">Table 5-5. Casing and Normalization in Strings</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G37346">5.19 Mapping Compatibility Variants</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G37318">5.20 Unicode Security</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G40025">5.21 Ignoring Characters in Processing</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G40062">Characters Ignored in Text Segmentation</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G40071">Characters Ignored in Line Breaking</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G40076">Characters Ignored in Cursive Joining</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G40081">Characters Ignored in Identifiers</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G40086">Characters Ignored in Searching and Sorting</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G40095">Characters Ignored for Display</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch05.pdf#G40630">5.22 U+FFFD Substitution in Conversion</a></li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G3804">6 Writing Systems and Punctuation</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G7382">6.1 Writing Systems</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G9319">Figure 6-1. Overriding Inherent Vowels</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G8037">Table 6-1. Typology of Scripts in the Unicode Standard</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G7981">6.2 General Punctuation</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G12643">Figure 6-2. Forms of CJK Punctuation</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G1830">Blocks Devoted to Punctuation</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G8931">Format Control Characters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G1834">Space Characters</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G17548">Table 6-2. Unicode Space Characters</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G6120">Dashes and Hyphens</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G9697">Table 6-3. Unicode Dash Characters</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G11294">Paired Punctuation</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G8392">Language-Based Usage of Quotation Marks</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G19995">Figure 6-3. European Quotation Marks</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G20930">Table 6-4. Models of Visual Relationship between Quote Glyphs</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G6606">Table 6-5. East Asian Quotation Marks</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G10176">Figure 6-4. Asian Quotation Marks</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G10190">Table 6-6. Opening and Closing Forms</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G12411">Apostrophes</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G20618">Other Punctuation</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G14370">Table 6-7. Names for the @</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G13111">Archaic Punctuation and Editorial Marks</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G10977">Figure 6-5. Examples of Ancient Greek Editorial Marks</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G10905">Figure 6-6. Use of Greek Paragraphos</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G13122">Indic Punctuation</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G21320">Table 6-8. Unicode Danda Characters</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G2846">CJK Punctuation</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G12554">Figure 6-7. CJK Parentheses</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G3673">Unknown or Unavailable Ideographs</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch06.pdf#G2869">CJK Compatibility Forms</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G3683">7 Europe-I</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G4321">7.1 Latin</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G16414">Figure 7-1. Alternative Glyphs in Latin</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G27327">Table 7-1. Preferred Rendering of Cedilla versus Comma Below</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G15992">Figure 7-2. Diacritics on i and j</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G17544">Figure 7-3. Vietnamese Letters and Tone Marks</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G5350">Letters of Basic Latin: U+0041–U+007A</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G5382">Letters of the Latin-1 Supplement: U+00C0–U+00FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G2925">Latin Extended-A: U+0100–U+017F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G2952">Latin Extended-B: U+0180–U+024F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G2970">IPA Extensions: U+0250–U+02AF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G25944">Phonetic Extensions: U+1D00–U+1DBF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G3022">Latin Extended Additional: U+1E00–U+1EFF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G19698">Latin Extended-C: U+2C60–U+2C7F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G19704">Latin Extended-D: U+A720–U+A7FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G27559">Latin Extended-E: U+AB30–U+AB6F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G19802">Latin Ligatures: U+FB00–U+FB06</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G10832">7.2 Greek</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G3379">Greek: U+0370–U+03FF</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G3072">Table 7-2. Nonspacing Marks Used with Greek</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G19978">Figure 7-4. Variations in Greek Capital Letter Upsilon</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G3218">Greek Extended: U+1F00–U+1FFF</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G3225">Table 7-3. Greek Spacing and Nonspacing Pairs</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G16261">Ancient Greek Numbers: U+10140–U+1018F</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G16256">7.3 Coptic</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G20355">Figure 7-5. Coptic Numerals</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G10850">7.4 Cyrillic</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G10851">Cyrillic: U+0400–U+04FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G14225">Cyrillic Supplement: U+0500–U+052F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G28571">Cyrillic Extended-A: U+2DE0–U+2DFF</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G28595">Figure 7-6. Combination of Titlo Letters</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G23788">Cyrillic Extended-B: U+A640–U+A69F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G30820">Cyrillic Extended-C: U+1C80–U+1C8F</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G15862">7.5 Glagolitic</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G16485">Glagolitic: U+2C00–U+2C5F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G30671">Glagolitic Supplement: U+1E000–U+1E02F</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G3334">7.6 Armenian</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G3360">7.7 Georgian</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G18923">Georgian: U+10A0–U+10FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G36704">Georgian Extended: U+1C90–U+1CBF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G36716">Georgian Supplement: U+2D00–U+2D2F</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G28244">Figure 7-7. Georgian Scripts and Casing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G15832">7.8 Modifier Letters</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G23715">Spacing Modifier Letters: U+02B0–U+02FF</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G15495">Figure 7-8. Tone Letters</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G17009">Modifier Tone Letters: U+A700–U+A71F</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G18195">7.9 Combining Marks</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G27888">Figure 7-9. Double Diacritics</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G25785">Figure 7-10. Positioning of Double Diacritics</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G17420">Figure 7-11. Use of CGJ with Double Diacritics</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G22113">Figure 7-12. Interaction of Combining Marks with Ligatures</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G18130">Combining Diacritical Marks: U+0300–U+036F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G16917">Combining Diacritical Marks Extended: U+1AB0–U+1AFF</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G28059">Figure 7-13. Positioning of Combining Parentheses</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G27507">Combining Diacritical Marks Supplement: U+1DC0–U+1DFF</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G29794">Table 7-4. Typicon Kavyka Symbols</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G7404">Combining Diacritical Marks for Symbols: U+20D0–U+20FF</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G21598">Figure 7-14. Use of Vertical Line Overlay for Negation</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G27052">Combining Half Marks: U+FE20–U+FE2F</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G26986">Figure 7-15. Double Diacritics and Half Marks</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch07.pdf#G24611">Combining Marks in Other Blocks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G26312">8 Europe-II</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G27575">8.1 Linear A</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G29567">8.2 Linear B</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G26402">Linear B Syllabary: U+10000–U+1007F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G26409">Linear B Ideograms: U+10080–U+100FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G26412">Aegean Numbers: U+10100–U+1013F</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G26417">8.3 Cypriot Syllabary</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G26428">Table 8-1. Similar Characters in Linear B and Cypriot</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G26505">8.4 Ancient Anatolian Alphabets</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G26507">Lycian: U+10280–U+1029F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G26509">Carian: U+102A0–U+102DF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G26511">Lydian: U+10920–U+1093F</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G27379">8.5 Old Italic</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G29055">Figure 8-1. Distribution of Old Italic</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G26624">8.6 Runic</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G33926">8.7 Old Hungarian</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G33932">8.8 Gothic</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G27032">8.9 Elbasan</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G32223">8.10 Caucasian Albanian</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G31220">8.11 Old Permic</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G33492">Table 8-2. Combining Marks Used in Old Permic</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G29182">8.12 Ogham</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch08.pdf#G27260">8.13 Shavian</a></li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G6526">9 Middle East-I</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G6528">9.1 Hebrew</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G3630">Hebrew: U+0590–U+05FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G6661">Alphabetic Presentation Forms: U+FB1D–U+FB4F</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G20596">9.2 Arabic</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G5460">Arabic: U+0600–U+06FF</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G42026">Figure 9-1. Directionality and Cursive Connection</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G42608">Figure 9-2. Using a Joiner</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G42632">Figure 9-3. Using a Non-joiner</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G5959">Figure 9-4. Combinations of Joiners and Non-joiners</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G27598">Figure 9-5. Placement of Harakat</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G20269">Table 9-1. Arabic Digit Names</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G21358">Table 9-2. Glyph Variation in Eastern Arabic-Indic Digits</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G27820">Figure 9-6. Arabic Year Sign</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G26848">Arabic Cursive Joining</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G50009">Table 9-3. Primary Arabic Joining Types</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G21187">Table 9-4. Derived Arabic Joining Types</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G20154">Table 9-5. Arabic Glyph Types</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G7480">Arabic Ligatures</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G36862">Table 9-6. Arabic Obligatory Ligature Joining Groups</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G23431">Table 9-7. Arabic Ligature Notation</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G28212">Arabic Joining Groups</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G50548">Table 9-8. Dual-Joining Arabic Characters</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G46139">Table 9-9. Right-Joining Arabic Characters</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G44865">Table 9-10. Forms of the Arabic Letter yeh</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G58105">Combining Hamza</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G45255">Table 9-11. Arabic Letters With Hamza Above</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G58126">Other Letters for Extended Arabic</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G26078">Arabic Supplement: U+0750–U+077F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G45390">Arabic Extended-A: U+08A0–U+08FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G45378">Arabic Presentation Forms-A: U+FB50–U+FDFF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G37489">Arabic Presentation Forms-B: U+FE70–U+FEFF</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G13005">9.3 Syriac</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G13006">Syriac: U+0700–U+074F</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G20471">Figure 9-7. Syriac Abbreviation</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G17304">Figure 9-8. Use of SAM</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G45628">Table 9-12. Miscellaneous Syriac Diacritic Use</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G10253">Syriac Shaping</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G11712">Table 9-13. Syriac Final Alaph Glyph Types</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G42091">Table 9-14. Dual-Joining Syriac Characters</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G43823">Table 9-15. Right-Joining Syriac Characters</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G43072">Table 9-16. Syriac Alaph Glyph Forms</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G34242">Table 9-17. Syriac Ligatures</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G51269">Syriac Supplement: U+0860–U+086F</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G34422">9.4 Samaritan</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G33938">Table 9-18. Samaritan Performative Punctuation Marks</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G46613">9.5 Mandaic</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G46639">Table 9-19. Dual-Joining Mandaic Characters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G46843">Table 9-20. Right-Joining Mandaic Characters</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch09.pdf#G59804">9.6 Yezidi</a></li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G26312">10 Middle East-II</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G26432">10.1 Old North Arabian</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G29209">10.2 Old South Arabian</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G26486">Table 10-1. Old South Arabian Numeric Characters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G30009">Table 10-2. Number Formation in Old South Arabian</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G26686">10.3 Phoenician</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G29567">10.4 Imperial Aramaic</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G26851">Table 10-3. Number Formation in Aramaic</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G27561">10.5 Manichaean</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G34637">Table 10-4. Dual-Joining Manichaean Letters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G34558">Table 10-5. Right-Joining Manichaean Letters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G34524">Table 10-6. Left-Joining Manichaean Letters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G34499">Table 10-7. Non-Joining Manichaean Letters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G34474">Table 10-8. Manichaean Ligatures</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G32800">10.6 Pahlavi and Parthian</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G28759">Inscriptional Parthian: U+10B40–U+10B5F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G28741">Inscriptional Pahlavi: U+10B60–U+10B7F</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G36773">Table 10-9. Inscriptional Parthian Shaping Behavior</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G28804">Psalter Pahlavi: U+10B80–U+10BAF</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G29021">10.7 Avestan</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G37376">Table 10-10. Avestan Shaping Behavior</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G43165">10.8 Chorasmian</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G41970">10.9 Elymaic</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G29596">10.10 Nabataean</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G29599">10.11 Palmyrene</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch10.pdf#G34825">10.12 Hatran</a></li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch11.pdf#G26312">11 Cuneiform and Hieroglyphs</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch11.pdf#G26852">11.1 Sumero-Akkadian</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch11.pdf#G26853">Cuneiform: U+12000–U+123FF</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch11.pdf#G26871">Table 11-1. Cuneiform Script Usage</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch11.pdf#G26961">Cuneiform Numbers and Punctuation: U+12400–U+1247F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch11.pdf#G27840">Early Dynastic Cuneiform: U+12480–U+1254F</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch11.pdf#G26461">11.2 Ugaritic</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch11.pdf#G26474">11.3 Old Persian</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch11.pdf#G26607">11.4 Egyptian Hieroglyphs</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch11.pdf#G26608">Egyptian Hieroglyphs: U+13000–U+1342F</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch11.pdf#G34003">Figure 11-1. Representation of Egyptian Hieroglyph Cartouches</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch11.pdf#G32499">Egyptian Hieroglyph Format Controls: U+13430–U+1343F</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch11.pdf#G33152">Figure 11-2. Vertical and Horizontal Formatting of Hieroglyphs</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch11.pdf#G33559">Figure 11-3. Insertion and Overlay Formatting of Hieroglyphs</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch11.pdf#G33778">Figure 11-4. Complex Cluster Formatting of Hieroglyphs</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch11.pdf#G33337">Table 11-2. Complex Hieroglyphs and Nonequivalent Sequences</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch11.pdf#G38064">Table 11-3. Complex Quadrat Representation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch11.pdf#G26724">11.5 Meroitic</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch11.pdf#G27920">11.6 Anatolian Hieroglyphs</a></li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G12281">12 South and Central Asia-I</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G12284">12.1 Devanagari</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G5526">Devanagari: U+0900–U+097F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G22251">Principles of the Devanagari Script</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G672982">Table 12-1. Devanagari Vowel Letters</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G58467">Figure 12-1. Dead Consonants in Devanagari</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G726380">Table 12-2. Devanagari Atomic Consonants</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G14565">Figure 12-2. Conjunct Formations in Devanagari</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G726758">Figure 12-3. Multi-Consonant Conjuncts in Devanagari</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G727223">Table 12-3. Devanagari Consonant Conjuncts</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G14632">Figure 12-4. Preventing Conjunct Forms in Devanagari</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G14703">Figure 12-5. Half-Consonants in Devanagari</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G14772">Figure 12-6. Independent Half-Forms in Devanagari</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G79954">Figure 12-7. Half-Consonants in Oriya</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G59257">Figure 12-8. Consonant Forms in Devanagari and Oriya</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G78484">Rendering Devanagari</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G15617">Figure 12-9. Rendering Order in Devanagari</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G63004">Table 12-4. Sample Devanagari Half-Forms</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G690572">Table 12-5. Sample Devanagari Ligatures</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G698734">Table 12-6. RA + Vocalic Letter Ligature Forms</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G698814">Table 12-7. Sample Devanagari Half-Ligature Forms</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G700689">Table 12-8. Marathi and Nepali Allographs</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G672573">Devanagari Digits, Punctuation, and Symbols</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G672550">Extensions in the Main Devanagari Block</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G664375">Figure 12-10. Use of Apostrophe in Bodo, Dogri and Maithili</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G672488">Figure 12-11. Use of Avagraha in Dogri</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G685037">Table 12-9. Devanagari Vowels Used in Bihari Languages</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G668898">Table 12-10. Prishthamatra Orthography</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G667447">Devanagari Extended: U+A8E0–U+A8FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G667459">Vedic Extensions: U+1CD0–U+1CFF</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G664195">12.2 Bengali (Bangla)</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G683217">Table 12-11. Bangla Vowel Letters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G701076">Table 12-12. Diphthong Vowel Letters in Kokborok</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G694995">Table 12-13. Assamese Consonant-Vowel Combinations</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G79529">Table 12-14. Bangla Consonant-Vowel Combinations</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G72800">Figure 12-12. Requesting Bangla Consonant-Vowel Ligature</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G72828">Figure 12-13. Blocking Bangla Consonant-Vowel Ligature</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G673141">Figure 12-14. Bangla Syllable tta</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G670335">Table 12-15. Use of Apostrophe in Bangla</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G668388">12.3 Gurmukhi</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G69536">Table 12-16. Gurmukhi Vowel Letters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G71179">Table 12-17. Gurmukhi Conjuncts</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G85156">Table 12-18. Additional Pairin and Addha Forms in Gurmukhi</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G77571">Table 12-19. Use of Joiners in Gurmukhi</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G34334">12.4 Gujarati</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G683531">Table 12-20. Gujarati Vowel Letters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G36454">Table 12-21. Gujarati Conjuncts</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G10153">12.5 Oriya (Odia)</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G72149">Table 12-22. Oriya Vowel Letters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G36569">Table 12-23. Oriya Conjuncts</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G56937">Table 12-24. Oriya Vowel Placement</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G693243">Table 12-25. Ligation for the Syllable om</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G10162">12.6 Tamil</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G11132">Tamil: U+0B80–U+0BFF</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G73005">Figure 12-15. Kssa Ligature in Tamil</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G73010">Tamil Vowels</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G734091">Table 12-26. Tamil Vowel Letters</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G708222">Figure 12-16. Tamil Vowel Reordering</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G74906">Figure 12-17. Tamil Two-Part Vowels</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G707830">Figure 12-18. Tamil Vowel Splitting and Reordering</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G74944">Figure 12-19. Vowel Reordering Around a Tamil Conjunct</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G734644">Figure 12-20. Confusable Vowels in Tamil</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G80547">Tamil Ligatures</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G76531">Figure 12-21. Tamil Ligatures with i</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G707055">Table 12-27. Tamil Ligatures with u</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G74041">Figure 12-22. Spacing Forms of Tamil u</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G75141">Figure 12-23. Tamil Ligatures with ra</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G724113">Figure 12-24. Tamil Ligatures for shri</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G681005">Figure 12-25. Traditional Tamil Ligatures with aa</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G75392">Figure 12-26. Traditional Tamil Ligatures with o</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G686844">Figure 12-27. Traditional Tamil Ligatures with ai</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G75075">Figure 12-28. Vowel ai in Modern Tamil</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G734367">Table 12-28. Confusable Tamil Digits</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G736036">Tamil Supplement: U+11FC0–U+11FFF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G82005">Tamil Named Character Sequences</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G664412">Table 12-29. Tamil Vowels, Consonants, and Syllables</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G81985">12.7 Telugu</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G699614">Table 12-30. Telugu Vowel Letters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G687792">Table 12-31. Rendering of Telugu na + virama</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G38298">12.8 Kannada</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G11138">Kannada: U+0C80–U+0CFF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G30434">Principles of the Kannada Script</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G70975">Table 12-32. Kannada Vowel Letters</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G701836">Figure 12-29. Indicating Retroflexion in Badaga Vowels</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G30452">Rendering Kannada</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G702098">Table 12-33. Rendering of Kannada na + virama</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G22346">12.9 Malayalam</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G664887">Malayalam: U+0D00–U+0D7F</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G697643">Table 12-34. Malayalam Vowel Letters</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G697568">Malayalam Orthographic Reform</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G666463">Table 12-35. Malayalam Orthographic Reform</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G694049">Rendering Malayalam</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G666894">Table 12-36. Malayalam Conjuncts</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G694221">Table 12-37. Candrakkala Examples</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G706410">Table 12-38. Use of Joiners in Malayalam</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G739017">Table 12-39. Malayalam Conjuncts Involving Chillus</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G699522">Table 12-40. Malayalam /sasa/ and /uua/</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G667292">Table 12-41. Malayalam /ṉṟa/ and /ṉṯa/</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G701954">Table 12-42. Legacy Encoding of Malayalam Chillus</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch12.pdf#G697492">Malayalam Numbers and Punctuation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G26312">13 South and Central Asia-II</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G26451">13.1 Thaana</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G26473">Table 13-1. Thaana Glyph Placement</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G26561">13.2 Sinhala</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G26562">Sinhala: U+0D80–U+0DFF</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G26577">Table 13-2. Sinhala Vowel Letters</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G31492">Sinhala Archaic Numbers: U+111E0–U+111FF</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G31609">13.3 Newa</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G33176">Table 13-3. Murmured Resonants in Nepal Bhasa</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G31615">13.4 Tibetan</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G26668">Figure 13-1. Tibetan Syllable Structure</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G26768">Figure 13-2. Justifying Tibetan Tseks</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G27803">13.5 Mongolian</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G27804">Mongolian: U+1800–U+18AF</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G47689">Table 13-4. Letter Usage in Mongolian Writing Systems</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G27835">Figure 13-3. Mongolian Glyph Convergence</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G27850">Figure 13-4. Mongolian Consonant Ligation</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G27863">Figure 13-5. Mongolian Positional Forms</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G27897">Figure 13-6. Mongolian Free Variation Selector</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G27922">Figure 13-7. Mongolian Gender Forms</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G27942">Figure 13-8. Mongolian Vowel Separator</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G37403">Mongolian Supplement: U+11660–U+1167F</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G27263">13.6 Limbu</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G27295">Table 13-5. Positions of Limbu Combining Characters</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G27615">13.7 Meetei Mayek</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G27616">Meetei Mayek: U+ABC0–U+ABFF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G27636">Meetei Mayak Extensions: U+AAE0–U+AAF6</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G27701">13.8 Mro</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G27702">13.9 Warang Citi</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G29195">13.10 Ol Chiki</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G27486">13.11 Chakma</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G27253">13.12 Lepcha</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G26811">Table 13-6. Lepcha Syllabic Structure</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G28198">13.13 Saurashtra</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G33278">13.14 Masaram Gondi</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G38402">Figure 13-9. Masaram Gondi Consonant Clusters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G36492">Figure 13-10. Rendering of ra in Masaram Gondi</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G35762">Table 13-7. Various Signs in Masaram Gondi</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G39306">13.15 Gunjala Gondi</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G40296">Figure 13-11. Gunjala Gondi Conjunct Formation</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch13.pdf#G46061">13.16 Wancho</a></li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G37825">14 South and Central Asia-III</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G39063">14.1 Brahmi</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G39077">Table 14-1. Brahmi Vowel Letters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G39118">Figure 14-1. Consonant Ligatures in Brahmi</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G39993">Table 14-2. Brahmi Positional Digits</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G38474">14.2 Kharoshthi</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G38475">Kharoshthi: U+10A00–U+10A5F</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G39718">Figure 14-2. Geographical Extent of the Kharoshthi Script</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G38505">Figure 14-3. Kharoshthi Number 1996</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G38518">Rendering Kharoshthi</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G38527">Figure 14-4. Kharoshthi Rendering Example</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G38544">Table 14-3. Kharoshthi Vowel Signs</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G38694">Table 14-4. Kharoshthi Vowel Modifiers</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G38741">Table 14-5. Kharoshthi Consonant Modifiers</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G40395">Table 14-6. Examples of Kharoshthi Virama</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G47302">Figure 14-5. Subjoined Forms of ya</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G40424">14.3 Bhaiksuki</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G40430">14.4 Phags-pa</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G38231">Figure 14-6. Phags-pa Syllable Om</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G39555">Table 14-7. Phags-pa Positional Forms of I, U, E, and O</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G38340">Table 14-8. Contextual Glyph Mirroring in Phags-pa</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G38399">Table 14-9. Phags-pa Standardized Variants</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G38440">Figure 14-7. Phags-pa Reversed Shaping</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G38187">14.5 Marchen</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G41935">14.6 Zanabazar Square</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G48824">Figure 14-8. Conjunct Stacking in Zanabazar Square</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G41941">14.7 Soyombo</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G41975">14.8 Old Turkic</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G49463">14.9 Old Sogdian</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G49476">14.10 Sogdian</a></li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G71814">15 South and Central Asia-IV</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G59104">15.1 Syloti Nagri</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G69704">15.2 Kaithi</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G81154">15.3 Sharada</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G81184">15.4 Takri</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G81200">Table 15-1. Takri Vowel Letters</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G80829">15.5 Siddham</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G91137">Figure 15-1. Siddham Consonant Cluster</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G90604">Table 15-2. Siddham Punctuation Characters</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G89564">15.6 Mahajani</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G81423">15.7 Khojki</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G80879">15.8 Khudawadi</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G85605">Table 15-3. Khudawadi Vowel Letters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G87650">Table 15-4. Representation of Arabic Sounds in Khudawadi</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G95487">15.9 Multani</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G95493">15.10 Tirhuta</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G84879">Table 15-5. Tirhuta Vowel Letters</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G80897">15.11 Modi</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G88240">Table 15-6. Modi Vowel Letters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G98563">Figure 15-2. Modi Shaping for ra</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G106413">15.12 Nandinagari</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G106415">Nandinagari: U+119A0–U+119FF</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G81052">15.13 Grantha</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G82060">Grantha: U+11300–U+1137F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G93731">Rendering Grantha</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G93396">Figure 15-3. Splitting Large Conjunct Stacks in Grantha</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G95200">Table 15-7. Rendering of Explicit Virama Forms in Grantha</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G94109">Table 15-8. Additional Svara Marks used in Grantha</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G108027">15.14 Dives Akuru</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G95570">15.15 Ahom</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G95556">15.16 Sora Sompeng</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch15.pdf#G100066">15.17 Dogra</a></li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G44608">16 Southeast Asia</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G46485">16.1 Thai</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G54466">Table 16-1. Glyph Positions in Thai Syllables</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G10988">16.2 Lao</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G55239">Table 16-2. Glyph Positions in Lao Syllables</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G83057">Table 16-3. Additional Characters for Pali and Sanskrit</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G24999">16.3 Myanmar</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G14008">Myanmar: U+1000–U+109F</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G69466">Table 16-4. Modern Burmese Syllabic Structure</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G64560">Myanmar Extended-A: U+AA60–U+AA7F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G64564">Khamti Shan</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G65093">Table 16-5. Khamti Shan Tone Marks</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G64596">Aiton and Phake</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G71231">Myanmar Extended-B: U+A9E0–U+A9FF</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G64642">16.4 Khmer</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G14015">Khmer: U+1780–U+17FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G37574">Principles of the Khmer Script</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G43591">Table 16-6. Independent Khmer Vowel Characters</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G71385">Table 16-7. Two Registers of Khmer Consonants</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G53398">Table 16-8. Khmer Subscript Consonant Signs</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G41290">Table 16-9. Khmer Composite Dependent Vowel Signs with Nikahit</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G40023">Table 16-10. Khmer Subscript Independent Vowel Signs</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G40542">Figure 16-1. Common Ligatures in Khmer</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G40597">Figure 16-2. Common Multiple Forms in Khmer</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G43876">Figure 16-3. Examples of Syllabic Order in Khmer</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G50989">Figure 16-4. Ligation in Muul Style in Khmer</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G39010">Khmer Symbols: U+19E0–U+19FF</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G32903">16.5 Tai Le</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G36783">Table 16-11. Tai Le Tone Marks</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G72322">Table 16-12. Myanmar Digits in Tai Le</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G65706">16.6 New Tai Lue</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G71941">Table 16-13. New Tai Lue Vowel Placement</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G53239">Table 16-14. New Tai Lue Registers and Tones</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G53337">16.7 Tai Tham</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G59747">16.8 Tai Viet</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G63064">Table 16-15. Tai Viet Symbols and Punctuation</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G61902">16.9 Kayah Li</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G55659">16.10 Cham</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G65525">Table 16-16. Cham Syllabic Structure</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G68320">16.11 Pahawh Hmong</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G70810">Figure 16-5. Pahawh Hmong Syllable Structure</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G81876">16.12 Nyiakeng Puachue Hmong</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G68308">16.13 Pau Cin Hau</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch16.pdf#G73728">16.14 Hanifi Rohingya</a></li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G26312">17 Indonesia and Oceania</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G26433">17.1 Philippine Scripts</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G26435">Tagalog: U+1700–U+171F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G26437">Hanunóo: U+1720–U+173F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G26439">Buhid: U+1740–U+175F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G26441">Tagbanwa: U+1760–U+177F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G26445">Principles of the Philippine Scripts</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G26472">Table 17-1. Hanunóo and Buhid Vowel Sign Combinations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G26727">17.2 Buginese</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G26743">Figure 17-1. Buginese Ligature</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G26759">17.3 Balinese</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G26774">Table 17-2. Balinese Base Consonants and Conjunct Forms</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G26999">Table 17-3. Sasak Extensions for Balinese</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G27066">Figure 17-2. Writing dharma in Balinese</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G27086">Table 17-4. Balinese Consonant Clusters with u and u:</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G27153">17.4 Javanese</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G27172">Figure 17-3. Representation of Javanese Two-Part Vowels</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G27208">17.5 Rejang</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G27226">17.6 Batak</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G27244">17.7 Sundanese</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G27245">Sundanese: U+1B80–U+1BBF</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G27268">Table 17-5. Modern Sundanese Syllabic Structure</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G28081">Sundanese Supplement: U+1CC0–U+1CCF</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch17.pdf#G29334">17.8 Makasar</a></li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G12159">18 East Asia</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G29086">18.1 Han</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G15189">CJK Unified Ideographs</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G16616">Blocks Containing Han Ideographs</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G27517">Table 18-1. Blocks Containing Han Ideographs</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G43510">Table 18-2. Small Extensions to CJK Blocks</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G16674">General Characteristics of Han Ideographs</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G29440">Table 18-3. Common Han Characters</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G12505">Figure 18-1. Han Spelling</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G12526">Figure 18-2. Semantic Context for Han Characters</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G11484">Principles of Han Unification</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G12547">Figure 18-3. Three-Dimensional Conceptual Model</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G29313">Unification Rules</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G19381">Figure 18-4. CJK Source Separation</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G26207">Table 18-4. Source Encoding for Sword Variants</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G12589">Figure 18-5. Not Cognates, Not Unified</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G28588">Abstract Shape</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G12606">Figure 18-6. Ideographic Component Structure</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G12623">Figure 18-7. The Most Superior Node of an Ideographic Component</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G11539">Table 18-5. Ideographs Not Unified</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G38159">Table 18-6. Ideographs Unified</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G11620">Han Ideograph Arrangement</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G11626">Table 18-7. Han Ideograph Arrangement</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G37685">Radical-Stroke Indices</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G37346">Mappings for Han Ideographs</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G32031">CJK Compatibility Ideographs: U+F900–U+FAFF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G42598">CJK Compatibility Supplement: U+2F800–U+2FA1D</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G13008">Kanbun: U+3190–U+319F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G12054">Symbols Derived from Han Ideographs</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G13879">CJK and Kangxi Radicals: U+2E80–U+2FD5</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G26479">CJK Additions from HKSCS and GB 18030</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G27647">CJK Strokes: U+31C0–U+31EF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G62926">Ideographic Symbols and Punctuation: U+16FE0–U+16FFF</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G28626">18.2 Ideographic Description Characters</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G57887">Figure 18-8. Examples of Ideographic Description Characters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G39401">Figure 18-9. Using the Ideographic Description Characters</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G22467">18.3 Bopomofo</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G25740">Table 18-8. Mandarin Tone Marks</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G25778">Table 18-9. Minnan and Hakka Tone Marks</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G22462">18.4 Hiragana and Katakana</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G22344">Hiragana: U+3040–U+309F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G12058">Katakana: U+30A0–U+30FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G22593">Katakana Phonetic Extensions: U+31F0–U+31FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G58554">Small Kana Extension: U+1B130-U+1B16F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G45307">Kana Supplement: U+1B000–U+1B0FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G37420">Kana Extended-A: U+1B100–U+1B12F</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G37564">Figure 18-10. Japanese Historic Kana for e and ye</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G46349">Figure 18-11. Hentaigana Distinct Parent Ideographs</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G49559">Figure 18-12. Other Hentaigana Examples</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G37555">18.5 Halfwidth and Fullwidth Forms</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G31028">18.6 Hangul</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G31081">Hangul Jamo: U+1100–U+11FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G31236">Hangul Jamo Extended-A: U+A960–U+A97F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G31240">Hangul Jamo Extended-B: U+D7B0–U+D7FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G31321">Hangul Compatibility Jamo: U+3130–U+318F</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G25469">Table 18-10. Separating Jamo Characters</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G11854">Hangul Syllables: U+AC00–U+D7A3</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G11871">Table 18-11. Line-Based Placement of Jungseong</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G13042">18.7 Yi</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G42061">18.8 Nüshu</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G44587">18.9 Lisu</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G42078">Table 18-12. Lisu Tone Letters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G42157">Table 18-13. Punctuation Adopted in Lisu Orthography</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G42236">18.10 Miao</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G43635">18.11 Tangut</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G43717">Tangut: U+17000–U+187FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G65723">Tangut Supplement: U+18D00–U+18D8F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G43765">Tangut Components: U+18800–U+18AFF</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G59285">18.12 Khitan Small Script</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch18.pdf#G64942">Figure 18-13. Cluster Patterns in Khitan Small Script</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G12178">19 Africa</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G14116">19.1 Ethiopic</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G14117">Ethiopic: U+1200–U+137F</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G56166">Table 19-1. Labialized Forms in Ethiopic -WAA</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G18412">Table 19-2. Labialized Forms in Ethiopic -WE</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G18764">Ethiopic Extensions</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G16914">19.2 Osmanya</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G43184">19.3 Tifinagh</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G52333">Figure 19-1. Tifinagh Contextual Shaping</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G52423">Figure 19-2. Tifinagh Consonant Joiner and Bi-consonants</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G18603">19.4 N’Ko</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G56653">Table 19-3. N’Ko Diacritic Usage</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G19947">Table 19-4. N’Ko Tone Diacritics on Vowels</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G23928">Figure 19-3. Examples of N’Ko Ordinals</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G43878">Table 19-5. N’Ko Letter Shaping</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G18604">19.5 Vai</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G45398">19.6 Bamum</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G45399">Bamum: U+A6A0–U+A6FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G49038">Bamum Supplement: U+16800–U+16A3F</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G54402">19.7 Bassa Vah</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G54425">19.8 Mende Kikakui</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G56092">Table 19-6. Number Formation in Mende Kikakui</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G56860">19.9 Adlam</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch19.pdf#G58353">19.10 Medefaidrin</a></li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch20.pdf#G26398">20 Americas</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch20.pdf#G26612">20.1 Cherokee</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch20.pdf#G26630">20.2 Canadian Aboriginal Syllabics</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch20.pdf#G26631">Canadian Aboriginal Syllabics: U+1400–U+167F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch20.pdf#G26670">Canadian Aboriginal Syllabics Extended: U+18B0–U+18FF</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch20.pdf#G26674">20.3 Osage</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch20.pdf#G27706">Table 20-1. Combining Marks used in Osage</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch20.pdf#G27507">20.4 Deseret</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch20.pdf#G26696">Figure 20-1. Short Words Equivalent to Deseret Letter Names</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch20.pdf#G26728">Table 20-2. IPA Transcription of Deseret</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch21.pdf#G26312">21 Notational Systems</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch21.pdf#G26597">21.1 Braille</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch21.pdf#G26709">21.2 Western Musical Symbols</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch21.pdf#G26741">Figure 21-1. Examples of Specialized Music Layout</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch21.pdf#G26762">Figure 21-2. Precomposed Note Characters</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch21.pdf#G26776">Figure 21-3. Alternative Noteheads</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch21.pdf#G26790">Figure 21-4. Augmentation Dots and Articulation Symbols</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch21.pdf#G26807">Table 21-1. Examples of Ornamentation</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch21.pdf#G29047">21.3 Byzantine Musical Symbols</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch21.pdf#G26878">21.4 Ancient Greek Musical Notation</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch21.pdf#G26890">Table 21-2. Representation of Ancient Greek Vocal and Instrumental Notation</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch21.pdf#G27643">21.5 Duployan</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch21.pdf#G28000">Duployan: U+1BC00–U+1BC9F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch21.pdf#G28325">Shorthand Format Controls: U+1BCA0–U+1BCAF</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch21.pdf#G28865">21.6 Sutton SignWriting</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch21.pdf#G28866">Sutton SignWriting: U+1D800–U+1DAAF</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G14025">22 Symbols</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G13244">22.1 Currency Symbols</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G27834">Figure 22-1. Alternative Glyphs for Dollar Sign</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G26389">Currency Symbols: U+20A0–U+20CF</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G35917">Table 22-1. Currency Symbols Encoded in Other Blocks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G14143">22.2 Letterlike Symbols</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G12468">Letterlike Symbols: U+2100–U+214F</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G27903">Figure 22-2. Alternative Glyphs for Numero Sign</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G15993">Mathematical Alphanumeric Symbols: U+1D400–U+1D7FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G16021">Mathematical Alphabets</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G26566">Figure 22-3. Wide Mathematical Accents</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G40550">Figure 22-4. Style Variants and Semantic Distinctions in Mathematics</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G52622">Table 22-2. Mathematical Alphanumeric Symbols</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G16085">Fonts Used for Mathematical Alphabets</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G40392">Figure 22-5. Easily Confused Shapes for Mathematical Glyphs</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G42174">Arabic Mathematical Alphabetic Symbols: U+1EE00–U+1EEFF</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G12146">22.3 Numerals</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G42773">Decimal Digits</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G63819">Table 22-3. Script-Specific Decimal Digits</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G44442">Figure 22-6. CJK Ideographic Numbers</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G42836">Other Digits</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G64365">Table 22-4. Compatibility Digits</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G47807">Figure 22-7. Regular and Old Style Digits</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G42887">Non-Decimal Radix Systems</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G42902">Acrophonic Systems and Other Letter-based Numbers</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G59594">Coptic Epact Numbers: U+102E0–U+102FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G52017">Rumi Numeral Symbols: U+10E60–U+10E7E</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G73762">Siyaq Numerical Notation Systems</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G46185">CJK Numerals</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G46039">Fractions</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G46047">Figure 22-8. Alternate Forms of Vulgar Fractions</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G46010">Common Indic Number Forms: U+A830–U+A83F</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G42931">22.4 Superscript and Subscript Symbols</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G46404">Superscripts and Subscripts: U+2070–U+209F</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G51347">22.5 Mathematical Symbols</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G26616">Mathematical Operators: U+2200–U+22FF</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G58950">Table 22-5. Mathematical Operators Disunified from Punctuation</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G18661">Supplements to Mathematical Symbols and Arrows</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G18690">Supplemental Mathematical Operators: U+2A00–U+2AFF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G18692">Miscellaneous Mathematical Symbols-A: U+27C0–U+27EF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G18695">Miscellaneous Mathematical Symbols-B: U+2980–U+29FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G36610">Miscellaneous Symbols and Arrows: U+2B00–U+2B7F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G26755">Arrows: U+2190–U+21FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G20370">Supplemental Arrows</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G23168">Standardized Variants of Mathematical Symbols</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G26223">22.6 Invisible Mathematical Operators</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G12243">22.7 Technical Symbols</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G12482">Control Pictures: U+2400–U+243F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G12269">Miscellaneous Technical: U+2300–U+23FF</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G41063">Figure 22-9. Usage of Crops and Quine Corners</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G41238">Table 22-6. Use of Mathematical Symbol Pieces</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G38022">Figure 22-10. Usage of the Decimal Exponent Symbol</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G18211">Optical Character Recognition: U+2440–U+245F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G78435">Symbols for Legacy Computing: U+1FB00-U+1FBFF</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G27321">22.8 Geometrical Symbols</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G27323">Box Drawing and Block Elements</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G40793">Geometric Shapes: U+25A0–U+25FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G57430">Geometric Shapes Extended: U+1F780–U+1F7FF</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G57602">Table 22-7. Geometric Shape Collections</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G12367">22.9 Miscellaneous Symbols</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G77351">Table 22-8. Blocks with Characters Often Shown as Emoji</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G12496">Miscellaneous Symbols and Pictographs</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G39120">Emoticons: U+1F600–U+1F64F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G39147">Transport and Map Symbols: U+1F680–U+1F6FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G12378">Dingbats: U+2700–U+27BF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G60210">Ornamental Dingbats: U+1F650–U+1F67F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G39194">Alchemical Symbols: U+1F700–U+1F77F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G36401">Mahjong Tiles: U+1F000–U+1F02F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G36408">Domino Tiles: U+1F030–U+1F09F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G39406">Playing Cards: U+1F0A0–U+1F0FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G66921">Chess Symbols: U+1FA00–U+1FA6F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G19706">Yijing Hexagram Symbols: U+4DC0–U+4DFF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G19722">Tai Xuan Jing Symbols: U+1D300–U+1D356</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G38581">Ancient Symbols: U+10190–U+101CF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G36652">Phaistos Disc Symbols: U+101D0–U+101FF</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G41738">22.10 Enclosed and Square</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G37392">Enclosed Alphanumerics: U+2460–U+24FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G37527">Enclosed CJK Letters and Months: U+3200–U+32FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G41433">CJK Compatibility: U+3300–U+33FF</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G37607">Table 22-9. Japanese Era Names</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G37643">Enclosed Alphanumeric Supplement: U+1F100–U+1F1FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch22.pdf#G37648">Enclosed Ideographic Supplement: U+1F200–U+1F2FF</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G30273">23 Special Areas and Format Characters</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G20365">23.1 Control Codes</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G20403">Representing Control Sequences</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G20426">Specification of Control Code Semantics</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G29694">Table 23-1. Control Codes Specified in the Unicode Standard</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G12985">23.2 Layout Controls</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G15334">Line and Word Breaking</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G28064">Table 23-2. Letter Spacing</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G23126">Cursive Connection and Ligatures</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G25327">Figure 23-1. Prevention of Joining</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G25361">Figure 23-2. Exhibition of Joining Glyphs in Isolation</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G25237">Figure 23-3. Effect of Intervening Joiners</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G24326">Combining Grapheme Joiner</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G16327">Bidirectional Ordering Controls</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G27359">Table 23-3. Bidirectional Ordering Controls</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G27446">Stateful Format Controls</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G27454">Table 23-4. Paired Stateful Controls</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G27491">Table 23-5. Paired Stateful Controls (Deprecated)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G19593">23.3 Deprecated Format Characters</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G19053">23.4 Variation Selectors</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G19184">23.5 Private-Use Characters</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G19465">Private Use Area: U+E000–U+F8FF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G19378">Supplementary Private Use Areas</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G24089">23.6 Surrogates Area</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G12612">23.7 Noncharacters</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G19635">23.8 Specials</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G25817">Byte Order Mark (BOM): U+FEFF</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G23822">Table 23-6. Unicode Encoding Scheme Signatures</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G24671">Table 23-7. U+FEFF Signature in Other Charsets</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G25776">Specials: U+FFF0–U+FFF8</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G15944">Annotation Characters: U+FFF9–U+FFFB</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G16543">Figure 23-4. Annotation Characters</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G14832">Replacement Characters: U+FFFC–U+FFFD</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G30110">23.9 Tag Characters</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G30112">Tag Characters: U+E0000–U+E007F</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G30427">Deprecated Use for Language Tagging</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G17655">Syntax for Embedding Tags</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G21490">Figure 23-5. Tag Characters</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G21334">Working with Language Tags</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G17574">Unicode Conformance Issues</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch23.pdf#G21691">Formal Tag Syntax</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G6548">24 About the Code Charts</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G2841">24.1 Character Names List</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G1155">Images in the Code Charts and Character Lists</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G8175">Special Characters and Code Points</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G8942">Character Names</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G8040">Informative Aliases</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G13170">Normative Aliases</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G7080">Cross References</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G7003">Information About Languages</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G4127">Case Mappings</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G3725">Decompositions</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G11576">Standardized Variation Sequences</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G19340">Positional Forms</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G18631">Block Headers</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G6527">Subheads</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G3563">24.2 CJK Ideographs</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G10503">CJK Unified Ideographs</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G9362">Table 24-1. IRG Sources</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G9735">Figure 24-1. CJK Chart Format for the Main CJK Block</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G11654">Figure 24-2. CJK Chart Format for CJK Extension A</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G9792">Figure 24-3. CJK Chart Format for CJK Extension B</a></li>
+</ul>
+</li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G14704">Compatibility Ideographs</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G14687">Figure 24-4. CJK Chart Format for Compatibility Ideographs</a></li>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G14694">Figure 24-5. Annotations Identifying CJK Unified Ideographs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/ch24.pdf#G10832">24.3 Hangul Syllables</a></li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/appA.pdf#G7496">A Notational Conventions</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appA.pdf#G7083">Code Points</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appA.pdf#G7091">Character Names</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appA.pdf#G7097">Character Blocks</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appA.pdf#G7105">Sequences</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appA.pdf#G7111">Rendering</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appA.pdf#G7432">Figure A-1. Example of Rendering</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appA.pdf#G7127">Properties and Property Values</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appA.pdf#G7133">Miscellaneous</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appA.pdf#G7146">Extended BNF</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appA.pdf#G7157">Table A-1. Extended BNF</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appA.pdf#G7269">Table A-2. Character Class Examples</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appA.pdf#G7322">Operators</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appA.pdf#G7997">Table A-3. Operators</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/appB.pdf#G3405">B Unicode Publications and Resources</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appB.pdf#G5982">B.1 The Unicode Consortium</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appB.pdf#G5996">The Unicode Technical Committee</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appB.pdf#G6029">Other Activities</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appB.pdf#G5406">B.2 Unicode Publications</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appB.pdf#G5934">B.3 Other Unicode Online Resources</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appB.pdf#G6484">Unicode Online Resources</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appB.pdf#G6182">How to Contact the Unicode Consortium</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/appC.pdf#G1823">C Relationship to ISO/IEC 10646</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appC.pdf#G1824">C.1 History</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appC.pdf#G5896">Table C-1. Timeline</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appC.pdf#G8861">C.2 Encoding Forms in ISO/IEC 10646</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appC.pdf#G6908">Zero Extending</a>
+<ul>
+      <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appC.pdf#G4518">Table C-2. Zero Extending</a></li>
+</ul>
+</li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appC.pdf#G4651">C.3 UTF-8 and UTF-16</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appC.pdf#G4429">UTF-8</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appC.pdf#G4436">UTF-16</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appC.pdf#G1864">C.4 Synchronization of the Standards</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appC.pdf#G1867">C.5 Identification of Features for Unicode</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appC.pdf#G5401">C.6 Character Names</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appC.pdf#G5447">C.7 Character Functional Specifications</a></li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/appD.pdf#G66343">D Version History of the Standard</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appD.pdf#G102885">Table D-1. Versions of Unicode and ISO/IEC 10646</a></li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/appE.pdf#G1550">E Han Unification History</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appE.pdf#G1281">E.1 Development of the URO</a></li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appE.pdf#G17834">E.2 Continuing Research on Ideographs</a>
+<ul>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appE.pdf#G1289">Ideographic Rapporteur Group</a></li>
+    <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appE.pdf#G17876">Ideographic Research Group</a></li>
+</ul>
+</li>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appE.pdf#G15393">E.3 CJK Sources</a></li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/appF.pdf#G1550">F Documentation of CJK Strokes</a>
+<ul>
+  <li><a href="http://www.unicode.org/versions/Unicode13.0.0/appF.pdf#G2788">Table F-1. CJK Strokes</a></li>
+</ul>
+</li>
+<li><a href="http://www.unicode.org/versions/Unicode13.0.0/UnicodeBookIX.pdf#G13609085">I Index</a></li>
+</ul>          </blockquote>
+
+</body></html>
+
