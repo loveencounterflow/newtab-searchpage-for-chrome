@@ -31,6 +31,16 @@ Make the NewTab page in Chrom(e|ium)-based browsers show search fields for your 
 * activate entry `Start Page > Controlled by Extension`
 * hit `ctrl+t` to see whether it works
 
+**To Do**
+
+* The above will make history show blank page
+* apply patch https://forum.vivaldi.net/topic/15528/how-to-make-your-startpage-newtab-extension-work-again/2
+* in short, install extension
+* copy ID of extension
+* then choose New Tab Page > Enter address
+* enter `chrome-extension://moifjngbhhfpfnkjghanopgconaepajl/main.html`
+* replace `moifjngbhhfpfnkjghanopgconaepajl` with the ID you copied
+
 ## Refs
 
 * https://blog.lateral.io/2016/04/create-chrome-extension-modify-websites-html-css/
